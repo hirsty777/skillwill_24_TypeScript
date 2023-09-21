@@ -60,12 +60,13 @@ input[type="date"]{
     width: 100px;
     height: 35px;
     background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
-
     font-weight: 700;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 8px;
 }
+    .add-todo-btn:hover{background-image: linear-gradient(to top, #3e6bb9 0%, #0d91bd 100%);}
+
 .see-todo-btn{
     width: 100px;
     height: 35px;
@@ -73,11 +74,11 @@ input[type="date"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 8px;
 }
+    .see-todo-btn:hover{background-image: linear-gradient(to top, #3e6bb9 0%, #0d91bd 100%);}
 
 .confirm{
     position: absolute;
@@ -94,7 +95,7 @@ input[type="date"]{
     }
 }
 
-/*mode changer btn*/
+/*mode changer btn (dark/light)*/
 .mode-btn{
     cursor: pointer;
     position: fixed;
