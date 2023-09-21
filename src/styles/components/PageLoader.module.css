@@ -1,0 +1,15 @@
+.loading-wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--background-color);
+  }
+  .loading{
+    width: 200px;
+    height: 200px;
+    background: center url("../../assets/loading.svg") no-repeat;
+    background-size: contain;
+}
+  

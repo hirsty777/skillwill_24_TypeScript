@@ -1,0 +1,91 @@
+.wrapper{
+    width:100%;
+    min-height: 300px;
+    text-align: center;
+    color: var(--text-color );
+}
+
+.todo-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 15px;
+}
+.todo-complited, .todo-incomplited{
+    min-height: 200px;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.782);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(30px, auto);
+    align-items: center;
+    justify-items: start;
+    text-align: start;
+    row-gap: 10px;
+    font-weight: 600;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+}
+.todo-complited{
+    background-color:#34568B;
+}
+.todo-incomplited{
+    background: #EFC050;
+}
+
+.todo-user{
+    align-self: start;
+}
+.todo-date{
+    align-self: start;
+    white-space: nowrap;
+}
+.todo-task{
+    grid-column: 1/3;
+}
+
+.todo-ckeck-wrapper{
+    position: relative;
+}
+.todo-svg-ckeck{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(0,-50%);
+}
+.todo-check{
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 9;
+    opacity: 0;
+    transform: translate(0,-50%);
+}
+
+.todo-delete{
+    cursor: pointer;
+    justify-self: end;
+    width: 70px;
+    height: 35px;
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.loader > *{
+    display: none;
+}
+.loader{
+    background-image: url("../../assets/loading.svg");
+    background-size:50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

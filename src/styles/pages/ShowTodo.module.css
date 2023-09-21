@@ -1,0 +1,35 @@
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: var(--background-color);
+}
+
+.back-svg{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 10px;
+}
+/*mode changer btn*/
+.mode-btn{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.mode-btn img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    
+}
